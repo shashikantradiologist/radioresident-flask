@@ -1,3 +1,21 @@
-*{
-    background-color: #F9FAFB;
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+  background: url('https://images.unsplash.com/photo-1588776814546-ec7e058b9a28?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center center/cover no-repeat;
+  min-height: 85vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
