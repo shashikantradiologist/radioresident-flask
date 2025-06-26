@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | RadioResident</title>
+
+  <!-- Global styles shared with the rest of the site -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+  <!-- ========= NAVBAR (matches index.html) ========= -->
+  <nav class="navbar">
+    <a href="../index.html" class="brand">
+      <img src="../static/img/radioresident_logo_transparent.png" alt="RadioResident logo" />
+      <span class="brand-name">RadioResident</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="../content/question-bank.html">Question&nbsp;Bank</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms-and-conditions.html">Terms</a>
+    </div>
+  </nav>
+  <!-- ============================================== -->
+
+  <!-- ===== HERO / PAGE HEADER ===== -->
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you—questions, feedback, or collaboration ideas.</p>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- Contact Details -->
+    <section>
+      <h2>Quick Details</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:support@radioresident.in">support@radioresident.in</a></li>
+        <li><strong>Twitter:</strong> <a href="https://twitter.com/radioresident" target="_blank">@RadioResident</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/radioresident" target="_blank">RadioResident</a></li>
+      </ul>
+    </section>
+
+    <!-- Simple Contact Form (no back-end yet) -->
+    <section>
+      <h2>Send a Message</h2>
+
+      <!-- NOTE: This form uses “mailto:” for now. 
+           Replace action="" with your backend endpoint whenever you add one. -->
+      <form action="mailto:support@radioresident.in" method="post" enctype="text/plain" class="contact-form">
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Your email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+
+        <button type="submit">Send&nbsp;Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy; 2025 RadioResident —
+    <a href="terms-and-conditions.html">Terms&nbsp;&amp;&nbsp;Conditions</a>
+  </footer>
+
+</body>
+</html>
