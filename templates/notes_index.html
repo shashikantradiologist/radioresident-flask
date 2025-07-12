@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">System-wise Notes</h2>
+  <div class="list-group">
+    {% for system in systems %}
+      <a href="{{ url_for('show_note', topic=system.slug) }}" class="list-group-item list-group-item-action">
+        {{ system.name }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

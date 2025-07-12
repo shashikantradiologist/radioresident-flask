@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} · RadioResident{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <h1>{{ title }} Notes</h1>
+    <p>System-wise Radiology theory for exam preparation.</p>
+  </div>
+</section>
+
+<section class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-md-11">
+      <div class="card shadow-sm p-4">
+        <div class="markdown-content">
+          {{ content|safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

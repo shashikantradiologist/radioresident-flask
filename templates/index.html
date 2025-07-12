@@ -2,46 +2,59 @@
 {% block title %}Dashboard · RadioResident{% endblock %}
 
 {% block content %}
-<!-- Welcome Banner -->
+<div class="container mt-4">
+  <!-- Welcome Banner -->
 <header class="hero">
   <h1>Welcome to RadioResident</h1>
   <p>Your one-stop portal for Radiology theory, mnemonics &amp; question banks.</p>
 </header>
 
-<!-- Dashboard Cards -->
-<section class="dashboard-cards">
-  <h2>Explore Resources</h2>
 
-  <div class="card-row">
-    <a class="card" href="{{ url_for('abdomen_notes') }}">
-      <span class="card-icon">📚</span>
-      <span class="card-title">System-wise Notes</span>
-    </a>
-
-    <a class="card" href="{{ url_for('mnemonics') }}">
-      <span class="card-icon">🧠</span>
-      <span class="card-title">Radiology Mnemonics</span>
-    </a>
-
-    <a class="card" href="{{ url_for('question_bank') }}">
-      <span class="card-icon">🎯</span>
-      <span class="card-title">Theory Question Bank</span>
-    </a>
-
-    <a class="card" href="{{ url_for('image_bank') }}">
-      <span class="card-icon">🖼️</span>
-      <span class="card-title">Spotters / Image Bank</span>
-    </a>
-
-    <a class="card" href="{{ url_for('planner') }}">
-      <span class="card-icon">📅</span>
-      <span class="card-title">Exam Planner</span>
-    </a>
-
-    <a class="card" href="{{ url_for('viva') }}">
-      <span class="card-icon">💬</span>
-      <span class="card-title">Viva Vault</span>
-    </a>
+  <!-- Dashboard Cards -->
+  <h2 class="mt-5 mb-4">Explore Resources</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <a class="card h-100 text-center text-decoration-none p-3" href="{{ url_for('notes_list') }}">
+        <div class="card-body">
+          <h5 class="card-title">📚<br>System-wise Notes</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a class="card h-100 text-center text-decoration-none p-3" href="{{ url_for('mnemonics') }}">
+        <div class="card-body">
+          <h5 class="card-title">🧠<br>Radiology Mnemonics</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a class="card h-100 text-center text-decoration-none p-3" href="{{ url_for('question_bank') }}">
+        <div class="card-body">
+          <h5 class="card-title">🎯<br>Theory Question Bank</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a class="card h-100 text-center text-decoration-none p-3" href="{{ url_for('image_bank') }}">
+        <div class="card-body">
+          <h5 class="card-title">🖼️<br>Spotters / Image Bank</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a class="card h-100 text-center text-decoration-none p-3" href="{{ url_for('planner') }}">
+        <div class="card-body">
+          <h5 class="card-title">📅<br>Exam Planner</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a class="card h-100 text-center text-decoration-none p-3" href="{{ url_for('viva') }}">
+        <div class="card-body">
+          <h5 class="card-title">💬<br>Viva Vault</h5>
+        </div>
+      </a>
+    </div>
   </div>
-</section>
+</div>
 {% endblock %}

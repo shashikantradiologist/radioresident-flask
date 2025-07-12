@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Admin Dashboard · RadioResident{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h2>⚙️ Admin Dashboard</h2>
+  <p>Welcome, admin!</p>
+  <ul class="admin-links">
+    <li><a href="{{ url_for('upload_docx') }}">📄 Upload .docx Notes</a></li>
+    <li><a href="{{ url_for('notes_list') }}">📚 View All Notes</a></li>
+    <li><a href="{{ url_for('admin_logout') }}">🚪 Logout</a></li>
+  </ul>
+</div>
+{% endblock %}

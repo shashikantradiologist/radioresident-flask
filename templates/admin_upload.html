@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Upload Notes · Admin{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <h3>📤 Upload .docx Notes</h3>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="docxfile" accept=".docx" required>
+    <button type="submit" class="btn btn-primary mt-2">Upload & Convert</button>
+  </form>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }} mt-3">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+</div>
+{% endblock %}
