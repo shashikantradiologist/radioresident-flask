@@ -1,29 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | RadioResident</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
+{% extends 'base.html' %}
+{% block title %}About · RadioResident{% endblock %}
+{% block content %}
 
 <body>
 
-  <!-- ===== NAVBAR (same structure as index.html) ===== -->
-  <nav class="navbar">
-    <a href="../index.html" class="brand">
-      <img src="../static/img/radioresident_logo_transparent.png" alt="RadioResident logo" />
-      <span class="brand-name">RadioResident</span>
-    </a>
 
-    <div class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="../content/question-bank.html">Question&nbsp;Bank</a>
-      <a href="contact.html">Contact</a>
-      <a href="terms-and-conditions.html">Terms</a>
-    </div>
-  </nav>
   <!-- ================================================= -->
 
   <header>
@@ -95,9 +76,7 @@
     </section>
   </main>
 
-  <footer>
-    &copy; 2025 RadioResident —
-    <a href="terms-and-conditions.html">Terms&nbsp;&amp;&nbsp;Conditions</a>
-  </footer>
+ 
 </body>
 </html>
+{% endblock %}

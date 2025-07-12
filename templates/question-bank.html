@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Question Bank | RadioResident</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
+{% extends 'base.html' %}
+{% block title %}About · RadioResident{% endblock %}
+{% block content %}
+
 
 <body>
-
-  <!-- ===== NAVBAR (matches rest of site) ===== -->
-  <nav class="navbar">
-    <a href="../index.html" class="brand">
-      <img src="../static/img/radioresident_logo_transparent.png" alt="RadioResident logo" />
-      <span class="brand-name">RadioResident</span>
-    </a>
-
-    <div class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="../pages/about.html">About</a>
-      <a href="question-bank.html">Question&nbsp;Bank</a>   <!-- current page -->
-      <a href="../pages/contact.html">Contact</a>
-      <a href="../pages/terms-and-conditions.html">Terms</a>
-    </div>
-  </nav>
-  <!-- ========================================= -->
 
   <header>
     <h1>Radiology Question Bank</h1>
@@ -51,10 +30,7 @@
 
   </main>
 
-  <footer>
-    &copy; 2025 RadioResident —
-    <a href="../pages/terms-and-conditions.html">Terms&nbsp;&amp;&nbsp;Conditions</a>
-  </footer>
 
 </body>
 </html>
+{% endblock %}

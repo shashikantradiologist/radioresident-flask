@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard · RadioResident{% endblock %}
+
+{% block content %}
+<!-- Welcome Banner -->
+<header class="hero">
+  <h1>Welcome to RadioResident</h1>
+  <p>Your one-stop portal for Radiology theory, mnemonics &amp; question banks.</p>
+</header>
+
+<!-- Dashboard Cards -->
+<section class="dashboard-cards">
+  <h2>Explore Resources</h2>
+
+  <div class="card-row">
+    <a class="card" href="{{ url_for('abdomen_notes') }}">
+      <span class="card-icon">📚</span>
+      <span class="card-title">System-wise Notes</span>
+    </a>
+
+    <a class="card" href="{{ url_for('mnemonics') }}">
+      <span class="card-icon">🧠</span>
+      <span class="card-title">Radiology Mnemonics</span>
+    </a>
+
+    <a class="card" href="{{ url_for('question_bank') }}">
+      <span class="card-icon">🎯</span>
+      <span class="card-title">Theory Question Bank</span>
+    </a>
+
+    <a class="card" href="{{ url_for('image_bank') }}">
+      <span class="card-icon">🖼️</span>
+      <span class="card-title">Spotters / Image Bank</span>
+    </a>
+
+    <a class="card" href="{{ url_for('planner') }}">
+      <span class="card-icon">📅</span>
+      <span class="card-title">Exam Planner</span>
+    </a>
+
+    <a class="card" href="{{ url_for('viva') }}">
+      <span class="card-icon">💬</span>
+      <span class="card-title">Viva Vault</span>
+    </a>
+  </div>
+</section>
+{% endblock %}
