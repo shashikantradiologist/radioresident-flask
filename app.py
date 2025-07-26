@@ -57,6 +57,7 @@ def notes_list():
         {"name": "MSK", "slug": "msk"},
         {"name": "Spine", "slug": "spine"},
         {"name": "Head & Neck", "slug": "headneck"},
+        {"name": "Genitourinary System", "slug": "genitourinary"}
     ]
     return render_template("notes_list.html", systems=systems)
 
