@@ -4,7 +4,7 @@ GENITOURINARY SYSTEM
 
 
 
-1. Differentiation of Renal Cyst and Renal Tumor by IVP (Intravenous Pyelography)
+## 1. Differentiation of Renal Cyst and Renal Tumor by IVP (Intravenous Pyelography)
 
 
 
@@ -12,7 +12,7 @@ Intravenous pyelography (IVP) is a radiological technique used to differentiate 
 
 
 
-- Renal Cyst:
+# - Renal Cyst:
 
   - On IVP, a renal cyst appears as a well-defined, round or oval, water-attenuating (non-enhancing) lesion.
 
@@ -24,7 +24,7 @@ Intravenous pyelography (IVP) is a radiological technique used to differentiate 
 
 
 
-- Renal Tumor:
+##  Renal Tumor:
 
   - A renal tumor, such as renal cell carcinoma, may appear as a mass with irregular borders.
 
